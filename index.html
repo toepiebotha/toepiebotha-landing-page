@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Johan Botha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0b1021;
+      --card: #141a32;
+      --text: #e8edf7;
+      --accent: #f5b400;
+      --muted: #9fb0d6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at 20% 20%, #1a2340 0%, #0b1021 55%);
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      padding: 32px 16px;
+    }
+    .card {
+      max-width: 640px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    }
+    .hero {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 20px;
+    }
+    .hero img { width: 100%; display: block; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p { margin: 0 0 12px; color: var(--muted); line-height: 1.5; }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: linear-gradient(120deg, #f5b400, #ffcf52);
+      color: #1a1300;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(245,180,0,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .cta:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(245,180,0,0.45); }
+    .sub { font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="hero">
+      <img src="./office-app.jpg" alt="The Office App – Johan Botha 3000" />
+    </div>
+    <h1>The Office App</h1>
+    <p>Open the Toepie 3000 – Folio Edition app.</p>
+    <a class="cta" href="https://toepie3000.toepiebotha.com">Launch App →</a>
+    <p class="sub">Questions? <a href="mailto:bothajohan@outlook.com" style="color:#ffcf52;text-decoration:none;">Email Johan</a></p>
+  </main>
+</body>
+</html>
